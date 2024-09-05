@@ -1,0 +1,105 @@
+/* Main Container Styles */
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+/* Contact Form Container Styles */
+.contact-form-container {
+    flex: 1;
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 20px;
+    /* Increase space on the left */
+    margin-right: 20px; /* Margin on the right */
+    max-width: 400px; /* Decrease the maximum width of the form */
+    margin-left: auto; /* Push form container towards the center */
+    margin-right: auto; /* Push form container towards the center */
+}
+
+.contact-form-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-field input:focus ~ label,
+.input-field textarea:focus ~ label,
+.input-field input:valid ~ label,
+.input-field textarea:valid ~ label {
+    top: -12px;
+    font-size: 0.8em;
+    color: #007BFF;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media Icons Container Styles */
+.social-media-container {
+    flex: 0 1 200px; /* Fixed width for social media icons */
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.social-media-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-icons img {
+    width: 40px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}

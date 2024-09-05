@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    position: relative;
+}
+
+header .top-space {
+    height: 140px;
+    background: white;
+}
+
+.logo-container {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    width: 140px;
+    height: 140px;
+    background-image: url('Images/FreedomCollegeLogo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Styles specific to the search-container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background: #333;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('Images/schoolHero.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#hero .btn:hover {
+    background: #0056b3;
+}
+
+/* Slogan Section */
+.slogan-section {
+    background: #444; /* Different background color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.slogan-section p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

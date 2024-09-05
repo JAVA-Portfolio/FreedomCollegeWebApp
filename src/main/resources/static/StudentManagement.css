@@ -1,0 +1,28 @@
+.navbar-brand {
+    width: 100%;
+    text-align: center;
+}
+.row-content {
+    margin-top: 20px;
+}
+.form-control {
+    width: 100%;
+}
+.table th, .table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 120px; /* Adjust minimum width for columns */
+    padding: 8px; /* Padding for cell content */
+}
+.table th:nth-child(1), .table td:nth-child(1) { min-width: 80px; } /* Student ID */
+.table th:nth-child(2), .table td:nth-child(2) { min-width: 150px; } /* Name */
+.table th:nth-child(3), .table td:nth-child(3) { min-width: 200px; } /* Email */
+.table th:nth-child(4), .table td:nth-child(4) { min-width: 120px; } /* Phone Number */
+.table th:nth-child(5), .table td:nth-child(5) { min-width: 100px; } /* Birthdate */
+.table th:nth-child(6), .table td:nth-child(6) { min-width: 80px; } /* Gender */
+.table th:nth-child(7), .table td:nth-child(7) { min-width: 120px; } /* Major */
+.table th:nth-child(8), .table td:nth-child(8) { min-width: 150px; } /* Actions */
+.table-actions a {
+    margin-right: 5px; /* Adjust spacing between buttons */
+}

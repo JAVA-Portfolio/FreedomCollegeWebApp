@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}">Static Homepage</title>
+    <link rel="stylesheet" th:href="@{/Design.css}">
+</head>
+<body>
+<header>
+    <div class="top-space">
+        <div class="logo-container"></div>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/contact}">Contact</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
+            <li><a th:href="@{/register}">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <h1>Welcome to Freedom College</h1>
+    <p>We color your Imagination.</p>
+    <a th:href="@{/register}" class="btn">Register Today</a>
+</section>
+
+<main layout:fragment="content">
+    <!-- Page-specific content will be inserted here -->
+</main>
+
+<section class="slogan-section">
+    <p>Your future starts here at Freedom College.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Freedom College. All rights reserved.</p>
+</footer>
+</body>
+</html>

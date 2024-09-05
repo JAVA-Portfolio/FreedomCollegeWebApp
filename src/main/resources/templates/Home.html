@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{Design}">
+<head>
+    <title>School Courses and News</title>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+</head>
+<body>
+<main>
+    <!-- thi section layout:fragment="content" says that this contant will go to contant of main template -->
+    <section layout:fragment="content">
+        <!-- Home.html container -->
+        <div class="container">
+            <!-- Information About the Courses we offer -->
+            <div class="courses-container">
+                <div class="courses">
+                    <div class="course-box">
+                        <h2>Information Technology</h2>
+                        <div class="image-box">
+                            <img src="/Images/computer-technology.jpg" alt="Information Technology">
+                        </div>
+                        <p>Students in this course will explore the practical applications of technology in business and everyday life. They will learn about information systems, software applications, and how technology can be used to solve real-world problems.</p>
+                        <div class="button-container">
+                            <a class="learn-more" href="link/to/information-technology">Learn More</a>
+                            <a class="apply-now" th:href="@{/register}">Apply</a>
+                        </div>
+                    </div>
+                    <div class="course-box">
+                        <h2>Computer Programming</h2>
+                        <div class="image-box">
+                            <img src="/Images/programming-languages.jpg" alt="Computer Programming">
+                        </div>
+                        <p>This course introduces students to the fundamentals of programming. They will learn various programming languages, develop problem-solving skills, and gain experience in writing, testing, and debugging code.</p>
+                        <div class="button-container">
+                            <a class="learn-more" href="link/to/computer-programming">Learn More</a>
+                            <a class="apply-now" th:href="@{/register}">Apply</a>
+                        </div>
+                    </div>
+                    <div class="course-box">
+                        <h2>Data Science</h2>
+                        <div class="image-box">
+                            <img src="/Images/dataScience.jpg" alt="Data Science">
+                        </div>
+                        <p>In this course, students will delve into data analysis, statistics, and machine learning. They will learn how to extract meaningful insights from data, use data visualization tools, and apply data-driven decision-making techniques.</p>
+                        <div class="button-container">
+                            <a class="learn-more" href="link/to/data-science">Learn More</a>
+                            <a class="apply-now" th:href="@{/register}">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of course section -->
+
+
+            <!-- Student Section -->
+            <div class="student-section">
+                <div class="container">
+                    <h2>Our Previous Students</h2>
+                    <div class="student-container">
+                        <!-- Student Boxes will be dynamically populated here -->
+                        <!-- Example Student Box -->
+                        <div class="student-box">
+                            <div class="student-image">
+                                <!-- Student Image -->
+                                <img src="/Images/student1.jpg" alt="Student 1">
+                            </div>
+                            <div class="student-details">
+                                <!-- Student Details -->
+                                <p>Name: John Doe</p>
+                                <p>Course: Data Science</p>
+                                <p>Company: Tech Solutions Inc.</p>
+                                <p>Job Title: Data Analyst</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Indicators for Student Boxes -->
+                    <div class="page-indicators">
+                        <span class="page-indicator active"></span>
+                        <span class="page-indicator"></span>
+                        <span class="page-indicator"></span>
+                        <!-- Add more spans for additional indicators as needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- End of Student Section -->
+
+            <!-- Top Employers our Students work for -->
+            <div class="employer-container">
+                <div class="employer">
+                   <div class="employer-box">
+                        <h1> INFORMATION ABOUT TOP EMPLOYERS WILL GO HERE</h1>
+                   </div>
+                </div>
+            </div>
+            <!-- End of employer section -->
+
+
+            <!-- Social how to connect with us -->
+            <div class="">
+                <div class="">
+                    <div class="">
+
+                        <h1> ALL ABOUT CONNECTING WITH US</h1>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End of Home Container -->
+    </section>
+</main>
+</body>
+</html>

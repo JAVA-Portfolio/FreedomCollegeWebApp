@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: calc(100vh - 200px); /* Adjusts height to ensure spacing */
+    background-color: #f7f7f7;
+}
+
+.login-form-wrapper {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.actions .remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.actions .remember-me input {
+    margin-right: 5px;
+}
+
+.actions a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #0056b3;
+}
+
+.register {
+    margin-top: 20px;
+    color: #333;
+}
+
+.register a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}

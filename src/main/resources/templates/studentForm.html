@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{Design}">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" th:href="@{/studentForm.css}" />
+</head>
+<body>
+<main>
+    <section layout:fragment="content">
+        <div class="form-wrapper">
+            <div class="form-container">
+                <header class="form-header">Registration Form</header>
+                <form th:action="@{/register}" th:object="${student}" method="post" class="form">
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" th:field="*{name}" placeholder="Enter full name" required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" th:field="*{email}" placeholder="Enter email address" required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" th:field="*{phoneNumber}" placeholder="Enter phone number" required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="birthDate">Birth Date</label>
+                        <input type="date" id="birthDate" th:field="*{birthdate}" required />
+                    </div>
+
+                    <div class="gender-box">
+                        <h3>Gender</h3>
+                        <div class="gender-option">
+                            <div class="gender">
+                                <input type="radio" id="check-male" th:field="*{gender}" value="Male" />
+                                <label for="check-male">Male</label>
+                            </div>
+                            <div class="gender">
+                                <input type="radio" id="check-female" th:field="*{gender}" value="Female" />
+                                <label for="check-female">Female</label>
+                            </div>
+                            <div class="gender">
+                                <input type="radio" id="check-other" th:field="*{gender}" value="Other" />
+                                <label for="check-other">Prefer not to say</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="major-field" class="input-box"> <!-- Added ID for specific styling -->
+                        <label for="major">Major</label>
+                        <select id="major" th:field="*{major}" required>
+                            <option value="" disabled selected>Select your major</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="studentId">Student ID</label>
+                        <input type="text" id="studentId" th:field="*{studentId}" placeholder="Enter student ID" readonly required />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" th:field="*{password}" placeholder="Choose a password" required />
+                    </div>
+
+                    <div class="input-box">
+                        <button type="submit" class="form-submit-button">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

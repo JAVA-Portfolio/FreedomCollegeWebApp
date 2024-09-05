@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{Design}">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+<body>
+<main>
+    <!-- This section layout:fragment="content" says that this content will go to content of the main template -->
+    <section layout:fragment="content">
+        <!-- Login container -->
+        <div class="login-container">
+            <!-- Login form wrapper -->
+            <div class="login-form-wrapper">
+                <h2>Login</h2>
+                <form th:action="@{/login}" method="post">
+                    <div class="input-field">
+                        <label for="login-username">username</label>
+                        <input type="text" id="login-username" name="username" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <div class="actions">
+                        <div class="remember-me">
+                            <label for="remember">
+                                <input type="checkbox" id="remember">
+                                Remember me
+                            </label>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="login-btn">Log In</button>
+                    <div class="register">
+                        <p>Don't have an account? <a th:href="@{/register}">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End of Login Container -->
+    </section>
+</main>
+</body>
+</html>
